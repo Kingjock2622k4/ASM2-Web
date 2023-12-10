@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(img/login.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.qus {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.qus a {
+  margin-left: 7px;
+  color: rgb(88, 211, 249);
+  text-decoration: none;
+}
+
+.qus a:hover {
+  color: #fff;
+}
+
+.container img {
+  margin-top: 20px;
+}
+
+.container .login-container {
+  position: relative;
+  width: 400px;
+  height: 460px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+  color: #fff;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+
+  /* Center horizontally and vertically */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-container:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.login-container h2 {
+  font-size: 30px;
+  margin-top: 10px;
+  color: rgb(88, 211, 249);
+}
+
+label {
+  font-size: 16px;
+  display: flex;
+  margin-left: 40px;
+  margin-top: 10px; /* Adjusted margin for labels */
+  color: rgb(88, 211, 249);
+}
+
+input {
+  margin-top: 10px;
+  width: 80%;
+  padding: 10px;
+  margin: 6px auto; /* Adjusted margin for input fields */
+  border: 1px solid rgb(88, 211, 249);
+  border-radius: 5px;
+}
+
+button {
+  font-size: large;
+  width: 80%;
+  padding: 10px;
+  margin: 30px auto; /* Adjusted margin for the button */
+  background-color: rgb(88, 211, 249);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(172, 60, 138);
+}
