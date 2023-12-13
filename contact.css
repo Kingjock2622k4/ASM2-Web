@@ -1,0 +1,102 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url(img/login.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(img/login.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  margin-top: -150px;
+}
+
+form {
+  max-width: 550px;
+  width: 90%;
+  background: white;
+  margin: 17vh auto 0 auto;
+  padding: 40px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  /* ------------------------------ */
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+}
+
+form:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.icon {
+  margin-left: 130px;
+  margin-right: -100px;
+}
+
+label {
+  display: block;
+  margin: 20px 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-bottom: 3px solid rgb(39, 51, 232);
+}
+
+.center {
+  text-align: center;
+}
+
+input[type="submit"] {
+  margin-top: 30px;
+  width: 90%;
+  max-width: 200px;
+  background: linear-gradient(to right, rgb(39, 51, 232), rgb(235, 45, 219));
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.error {
+  color: red;
+}
+
+.error-border {
+  border-bottom: 3px solid rgb(39, 51, 232);
+}
+
+#success {
+  color: #28a745;
+}
